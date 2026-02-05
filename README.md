@@ -9,7 +9,7 @@ You are a data engineer hired by a solid waste management company. It collects a
 * Total waste collected per year per city  
 * Total waste collected per month per city  
 * Total waste collected per quarter per city  
-*Total waste collected per year per trucktype  
+* Total waste collected per year per trucktype  
 * Total waste collected per trucktype per city  
 * Total waste collected per trucktype per station per city
 
