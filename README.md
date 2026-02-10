@@ -145,3 +145,41 @@ Take a screenshot of the first 5 rows in the table FactTrips.
 
 Name the screenshot `12-FactTrips.png`.  
 
+<h1 align="center">Exercise 4 - Write aggregation queries and create materialized views</h1>  
+
+In this exercise, you will query the data you have loaded in the previous exercise.  
+
+## Task 13: Create a grouping sets query  
+
+Create a grouping sets query using the columns stationid, trucktype, total waste collected.
+
+Take a screenshot of the SQL and the output rows.
+
+Name the screenshot `13-groupingsets.png`.  
+
+## Task 14: Create a rollup query  
+
+Create a rollup query using the columns year, city, stationid, and total waste collected.
+
+Take a screenshot of the SQL and the output rows.
+
+Name the screenshot `14-rollup.png`.  
+
+## Task 15: Create a cube query  
+
+Create a cube query using the columns year, city, stationid, and average waste collected.
+
+Take a screenshot of the SQL and the output rows.
+
+Name the screenshot `15-cube.png`.  
+
+## Task 16: Create a materialized view  
+
+Create a materialized view named max_waste_stats using the columns city, stationid, trucktype, and max waste collected.
+
+Take a screenshot of the SQL.
+
+Name the screenshot `16-mv.png`.  
+
+# Author
+# ***[Matteo Meloni](https://www.linkedin.com/in/matteo-meloni-40a357154/)***
