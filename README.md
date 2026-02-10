@@ -41,4 +41,107 @@ Here is a partial list of fields to serve as an example:
 
 Take a screenshot of the fieldnames for the table MyDimDate.
 
-Name the screenshot `1-MyDimDate.jpg` (Images can be saved with either the .jpg or .png extension).
+Name the screenshot `1-MyDimDate.png` (Images can be saved with either the .jpg or .png extension).  
+
+## Task 2: Design the dimension table MyDimWaste  
+
+Write down the fields in the MyDimWaste table in any text editor, one field per line.
+
+Take a screenshot of the fieldnames for the table MyDimWaste.
+
+Name the screenshot `2-MyDimWaste.png`.  
+
+## Task 3: Design the dimension table MyDimZone  
+
+Write down the fields in the MyDimZone table in any text editor, one field per line.
+
+Take a screenshot of the fieldnames for the table MyDimZone.
+
+Name the screenshot `3-MyDimZone.png`.  
+
+<h1 align="center">Exercise 2 - Create schema for data warehouse on PostgreSQL</h1>  
+
+In this exercise, you will create the tables you have designed in the previous exercise. Open pgAdmin and create a database named **Project**, then create the following tables.  
+
+## Task 5: Create the dimension table MyDimDate  
+
+Create the MyDimDate table.
+
+Take a screenshot of the SQL statement you used to create the table MyDimDate.
+
+Name the screenshot `5-MyDimDate.png`.  
+
+## Task 6: Create the dimension table MyDimWaste  
+
+Create the MyDimWaste table.
+
+Take a screenshot of the SQL statement you used to create the table MyDimWaste.
+
+Name the screenshot `6-MyDimWaste.png`. 
+
+## Task 7: Create the dimension table MyDimZone  
+
+Create the MyDimZone table.
+
+Take a screenshot of the SQL statement you used to create the table MyDimZone.
+
+Name the screenshot `7-MyDimZone.png`.  
+
+## Task 8: Create the fact table MyFactTrips  
+
+Create the MyFactTrips table.
+
+Take a screenshot of the SQL statement you used to create the table MyFactTrips.
+
+Name the screenshot `8-MyFactTrips.png`. 
+
+<h1 align="center">Exercise 3: Load data into the data warehouse</h1>  
+
+In this exercise, you will load the data into the tables.
+
+**After the initial schema design, you were told that due to operational issues, data could not be collected in the format initially planned. This implies that the previous tables (MyDimDate, MyDimWaste, MyDimZone, MyFactTrips) in the Project database and their associated attributes are no longer applicable to the current design. The company has now provided data in CSV files with new tables DimTruck and DimStation as per the new design.**  
+
+You will need to load the data provided by the company in CSV format. First, create a new database named FinalProject. Then, create the tables DimDate, DimTruck, DimStation, and FactTrips by defining the structure of the columns as per the CSV files. Next, load the data from the CSV files into the appropriate tables.  
+
+>*Note: Ensure that you upload the files to this path: /var/lib/pgadmin/*
+
+## Task 9: Load data into the dimension table DimDate  
+
+Download the data from [https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DB0260EN-SkillsNetwork/labs/Final%20Assignment/DimDate.csv](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DB0260EN-SkillsNetwork/labs/Final%20Assignment/DimDate.csv)  
+
+Load this data into DimDate table.
+
+Take a screenshot of the first 5 rows in the table DimDate.
+
+Name the screenshot `9-DimDate.png`.  
+
+## Task 10: Load data into the dimension table DimTruck  
+
+Download the data from [https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DB0260EN-SkillsNetwork/labs/Final%20Assignment/DimTruck.csv]([)](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DB0260EN-SkillsNetwork/labs/Final%20Assignment/DimTruck.csv)  
+
+Load this data into DimTruck table.
+
+Take a screenshot of the first 5 rows in the table DimTruck.
+
+Name the screenshot `10-DimTruck.png`.  
+
+## Task 11: Load data into the dimension table DimStation  
+
+Download the data from [https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DB0260EN-SkillsNetwork/labs/Final%20Assignment/DimStation.csv](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DB0260EN-SkillsNetwork/labs/Final%20Assignment/DimStation.csv)  
+
+Load this data into DimStation table.
+
+Take a screenshot of the first 5 rows in the table DimStation.
+
+Name the screenshot `11-DimStation.pmg`.  
+
+## Task 12: Load data into the fact table FactTrips  
+
+Download the data from [https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DB0260EN-SkillsNetwork/labs/Final%20Assignment/FactTrips.csv](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DB0260EN-SkillsNetwork/labs/Final%20Assignment/FactTrips.csv)  
+
+Load this data into FactTrips table.
+
+Take a screenshot of the first 5 rows in the table FactTrips.
+
+Name the screenshot `12-FactTrips.png`.  
+
