@@ -1,6 +1,8 @@
 <h1 align="center">Exercise 1: Design a data warehouse</h1>  
 
-![Table](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/hMJNLH6NFkVdh8Rqf-MDNg/imagePostGreSQL.png)  
+<p align="center">
+  <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/hMJNLH6NFkVdh8Rqf-MDNg/imagePostGreSQL.png" alt="Table">
+</p>
 
 ## Task 1: Design the dimension table MyDimDate  
 
