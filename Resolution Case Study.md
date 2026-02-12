@@ -46,11 +46,11 @@ For MyDimZone, we can do the same, or creating the primary key `ZoneID`, to matc
 
 Start the PostgreSQL server from the SN Toolbox as shown in the image below.  
 
-![PostgreSQL](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/xTYj5eYM4bLg7oV0HHGxBA/DWF1.png)  
+<img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/xTYj5eYM4bLg7oV0HHGxBA/DWF1.png" width="60%">
 
 Open the pgAdmin Graphical User Interface by clicking the pgAdmin launch button in the Cloud IDE interface.  
 
-![pgAdmin_launch](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/fUYB2aGP-Xg8FIX8hA8Yrw/DWF2.png)  
+<img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/fUYB2aGP-Xg8FIX8hA8Yrw/DWF2.png" width="60%">
 
 Once the pgAdmin GUI opens, click on the Servers tab on the left side of the page. You will be prompted to enter a password.  
 
@@ -58,23 +58,24 @@ Once the pgAdmin GUI opens, click on the Servers tab on the left side of the pag
 
 To retrieve your password, click on the PostgreSQL and go to Conection Information tab on the top of the interface.  
 
-![connection_information](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/V46jb0XRCMzh6nnTGmsJFQ/DWF3.png)  
+<img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/V46jb0XRCMzh6nnTGmsJFQ/DWF3.png" width="60%">
 
 Scroll down to the session password and click on the Copy icon to the right of your password to copy onto your clipboard.  
 
-![copy_password](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/EVui_ox9j9mK7dKeDKjtAQ/DWF4.png)  
+<img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/EVui_ox9j9mK7dKeDKjtAQ/DWF4.png" width="60%">
 
 Navigate back to the pgAdmin tab and paste in your password, then click OK.  
 
-![password_paste](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DB0260EN-SkillsNetwork/labs/BIWorkaroundFiles/week2/images/2.2.png)  
+<img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DB0260EN-SkillsNetwork/labs/BIWorkaroundFiles/week2/images/2.2.png" width="100%">
 
 You will then be able to access the pgAdmin GUI tool.
 
 In the left tree-view, right-click on `Databases > Create > Database`.   
 
-![create_database](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DB0260EN-SkillsNetwork/labs/BIWorkaroundFiles/week2/images/3.png)  
+<img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DB0260EN-SkillsNetwork/labs/BIWorkaroundFiles/week2/images/3.png" width="100%">
 
 In the Database box, type `Project` as the name for your new database, and then click Save. 
 
-![database_creation](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DB0260EN-SkillsNetwork/labs/BIWorkaroundFiles/week2/images/4.png)  
+<img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DB0260EN-SkillsNetwork/labs/BIWorkaroundFiles/week2/images/3.png" width="100%">
+
 
