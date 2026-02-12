@@ -78,4 +78,31 @@ In the Database box, type `Project` as the name for your new database, and then 
 
 <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DB0260EN-SkillsNetwork/labs/BIWorkaroundFiles/week2/images/3.png" width="100%">
 
+Click on the Query Tool icon on top of the left pane. 
+
+Once in it, write and run the following SQL script.  
+
+```sql
+CREATE TABLE "MyDimDate" (
+    DateID INTEGER NOT NULL PRIMARY KEY,
+    Date DATE NOT NULL,
+    Year SMALLINT NOT NULL,
+    Quarter SMALLINT NOT NULL CHECK (Quarter BETWEEN 1 AND 4),
+    QuarterName VARCHAR(2) NOT NULL,
+    Month SMALLINT NOT NULL CHECK (Month BETWEEN 1 AND 12),
+    MonthName VARCHAR(9) NOT NULL,
+    Day SMALLINT NOT NULL CHECK (Day BETWEEN 1 AND 31),
+    Weekday SMALLINT NOT NULL CHECK (Weekday BETWEEN 1 AND 7),
+    WeekdayName VARCHAR(9) NOT NULL
+);
+```
+
+![MyDimDate](https://github.com/MatteoMel1985/Relational-Dataset-Images/blob/main/Data%20Warehouse/02.05-MyDimDate.png?raw=true)  
+
+Take a screenshot of the SQL statement you used to create the table MyDimDate.
+
+Name the screenshot `5-MyDimDate.png`.  
+
+![5-MyDimDate.pn](https://github.com/MatteoMel1985/Data_Warehouse_Fundamentals-IBM_Data_Engineering/blob/main/Tasks/5-MyDimDate.PNG?raw=true)  
+
 
