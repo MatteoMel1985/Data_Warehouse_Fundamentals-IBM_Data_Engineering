@@ -44,6 +44,8 @@ For MyDimZone, we can do the same, or creating the primary key `ZoneID`, to matc
 
 <h1 align="center">Exercise 2 - Create schema for data warehouse on PostgreSQL</h1>  
 
+## Task 5: Create the dimension table MyDimDate  
+
 Start the PostgreSQL server from the SN Toolbox as shown in the image below.  
 
 <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/xTYj5eYM4bLg7oV0HHGxBA/DWF1.png" width="60%">
@@ -104,5 +106,24 @@ Take a screenshot of the SQL statement you used to create the table MyDimDate.
 Name the screenshot `5-MyDimDate.png`.  
 
 ![5-MyDimDate.pn](https://github.com/MatteoMel1985/Data_Warehouse_Fundamentals-IBM_Data_Engineering/blob/main/Tasks/5-MyDimDate.PNG?raw=true)  
+
+## Task 6: Create the dimension table MyDimWaste  
+
+Highlight all the text and delete it, and now run the following SQL string.
+
+```sql
+CREATE TABLE "MyDimWaste" (
+    WasteID INTEGER NOT NULL PRIMARY KEY,
+    WasteType VARCHAR(50) NOT NULL
+);
+```
+
+![MyDimWaste](https://github.com/MatteoMel1985/Relational-Dataset-Images/blob/main/Data%20Warehouse/02.06-MyDimWaste.png?raw=true)  
+
+Take a screenshot of the SQL statement and save it as `6-MyDimWaste.png`  
+
+![6-MyDimWaste.pn](https://github.com/MatteoMel1985/Data_Warehouse_Fundamentals-IBM_Data_Engineering/blob/main/Tasks/6-MyDimWaste.PNG?raw=true)  
+
+## Task 7: Create the dimension table MyDimZone    
 
 
