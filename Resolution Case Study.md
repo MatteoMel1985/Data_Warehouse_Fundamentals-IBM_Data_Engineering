@@ -126,4 +126,44 @@ Take a screenshot of the SQL statement and save it as `6-MyDimWaste.png`
 
 ## Task 7: Create the dimension table MyDimZone    
 
+Highlight all the text and delete it, and now run the following SQL string.  
+
+```SQL
+CREATE TABLE "MyDimZone" (
+    ZoneID INTEGER NOT NULL PRIMARY KEY,
+    CollectionZone VARCHAR(50) NOT NULL,
+    City VARCHAR(50) NOT NULL
+);
+```
+
+![MyDimZone](https://github.com/MatteoMel1985/Relational-Dataset-Images/blob/main/Data%20Warehouse/02.07-MyDimZone.png?raw=true)  
+
+Take a screenshot of the SQL statement and save it as `7-MyDimZone.png`  
+
+![7-MyDimZone.png](https://github.com/MatteoMel1985/Data_Warehouse_Fundamentals-IBM_Data_Engineering/blob/main/Tasks/7-MyDimZone.PNG?raw=true)  
+
+## Task 8: Create the fact table MyFactTrips  
+
+Highlight all the text and delete it, and now run the following SQL string.  
+
+```SQL
+CREATE TABLE "MyFactTrips" (
+    TripID SERIAL PRIMARY KEY,
+    DateID INTEGER NOT NULL,
+    WasteID INTEGER NOT NULL,
+    ZoneID INTEGER NOT NULL,
+    WasteCollectedTons DECIMAL(10, 2) NOT NULL,
+    FOREIGN KEY (DateID) REFERENCES "MyDimDate" (DateID),
+    FOREIGN KEY (WasteID) REFERENCES "MyDimWaste" (WasteID),
+    FOREIGN KEY (ZoneID) REFERENCES "MyDimZone" (ZoneID)
+);
+```
+
+![MyFactTrips](https://github.com/MatteoMel1985/Relational-Dataset-Images/blob/main/Data%20Warehouse/02.08-MyFactTrips.png?raw=true)  
+
+Take a screenshot of the SQL statement and save it as `8-MyFactTrips.png`  
+
+![8-MyFactTrips.png](https://github.com/MatteoMel1985/Data_Warehouse_Fundamentals-IBM_Data_Engineering/blob/main/Tasks/8-MyFactTrips.PNG?raw=true)  
+
+<h1 align="center">Exercise 3: Load data into the data warehouse</h1>  
 
