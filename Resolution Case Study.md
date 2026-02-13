@@ -78,7 +78,7 @@ In the left tree-view, right-click on `Databases > Create > Database`.
 
 In the Database box, type `Project` as the name for your new database, and then click Save. 
 
-<img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DB0260EN-SkillsNetwork/labs/BIWorkaroundFiles/week2/images/3.png" width="100%">
+<img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DB0260EN-SkillsNetwork/labs/BIWorkaroundFiles/week2/images/4.png" width="100%">
 
 Click on the Query Tool icon on top of the left pane. 
 
@@ -166,4 +166,73 @@ Take a screenshot of the SQL statement and save it as `8-MyFactTrips.png`
 ![8-MyFactTrips.png](https://github.com/MatteoMel1985/Data_Warehouse_Fundamentals-IBM_Data_Engineering/blob/main/Tasks/8-MyFactTrips.PNG?raw=true)  
 
 <h1 align="center">Exercise 3: Load data into the data warehouse</h1>  
+
+*After the initial schema design, you were told that due to operational issues, data could not be collected in the format initially planned. This implies that the previous tables (MyDimDate, MyDimWaste, MyDimZone, MyFactTrips) in the Project database and their associated attributes are no longer applicable to the current design. The company has now provided data in CSV files with new tables DimTruck and DimStation as per the new design.* 
+
+*You will need to load the data provided by the company in CSV format. First, create a new database named `FinalProject`. Then, create the tables DimDate, DimTruck, DimStation, and FactTrips by defining the structure of the columns as per the CSV files. Next, load the data from the CSV files into the appropriate tables*.  
+
+As we did in Task 5, right-click on `Databases > Create > Database` on the left tree-view.   
+
+<img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DB0260EN-SkillsNetwork/labs/BIWorkaroundFiles/week2/images/3.png" width="100%">
+
+In the Database box, type `FinalProject` as the name for your new database, and then click Save. 
+
+<img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DB0260EN-SkillsNetwork/labs/BIWorkaroundFiles/week2/images/4.png" width="100%">
+
+Now, click on the Query Tool and select Open File.  
+
+![Open_File](https://github.com/MatteoMel1985/Relational-Dataset-Images/blob/main/Data%20Warehouse/03-OpenFile.png?raw=true)  
+
+To create the `DimDate` table, run the following SQL code. 
+
+```SQL
+CREATE TABLE "DimDate" (
+    Dateid INTEGER NOT NULL PRIMARY KEY,
+    Date DATE NOT NULL,
+    Year SMALLINT NOT NULL,
+    Quarter SMALLINT NOT NULL CHECK (Quarter BETWEEN 1 AND 4),
+    QuarterName VARCHAR(2) NOT NULL,
+    Month SMALLINT NOT NULL CHECK (Month BETWEEN 1 AND 12),
+    MonthName VARCHAR(9) NOT NULL,
+    Day SMALLINT NOT NULL CHECK (Day BETWEEN 1 AND 31),
+    Weekday SMALLINT NOT NULL CHECK (Weekday BETWEEN 1 AND 7),
+    WeekdayName VARCHAR(9) NOT NULL
+);
+```
+
+For `DimStation`, run the following. 
+
+```SQL
+CREATE TABLE "DimStation" (
+    Stationid INTEGER NOT NULL PRIMARY KEY,
+    City VARCHAR(50) NOT NULL
+);
+```
+
+The following creates `DimTruck`.
+
+```SQL
+CREATE TABLE "DimTruck" (
+    Truckid INTEGER NOT NULL PRIMARY KEY,
+    TruckType VARCHAR(50) NOT NULL
+);
+```
+
+And finally, this last makes `FactTrips`.  
+
+```SQL
+CREATE TABLE "FactTrips" (
+    Tripid INTEGER NOT NULL PRIMARY KEY,
+    Dateid INTEGER NOT NULL,
+    Stationid INTEGER NOT NULL,
+    Truckid INTEGER NOT NULL,
+    Wastecollected DECIMAL(10, 2) NOT NULL,
+    FOREIGN KEY (Dateid) REFERENCES "DimDate" (Dateid),
+    FOREIGN KEY (Stationid) REFERENCES "DimStation" (Stationid),
+    FOREIGN KEY (Truckid) REFERENCES "DimTruck" (Truckid)
+);
+```
+
+
+
 
