@@ -247,4 +247,11 @@ Click on Query tool and then click Open file and click on the three dot and choo
 
 ![upload](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/-lN1dzcWoXk2vRUggqhofQ/DWF8.png)  
 
-In the new blank page that appears drag and drop the star-schema.sql file inside the blank page. Once the star-schema.sql file is successfully loaded, click on the X icon on the right hand side of the page as shown in the screenshot.
+Click on the folder on the right side of `Filename`. 
+
+![Screenshot_1](https://github.com/MatteoMel1985/Relational-Dataset-Images/blob/main/Data%20Warehouse/Screenshot_1.PNG?raw=true)
+
+Click on the upward pointing arrow on the upper left side of the window and select the following path: `/var/lib/pgadmin/`.  
+
+![Screenshot_2](https://github.com/MatteoMel1985/Relational-Dataset-Images/blob/main/Data%20Warehouse/Screenshot_2.PNG?raw=true)  
+
