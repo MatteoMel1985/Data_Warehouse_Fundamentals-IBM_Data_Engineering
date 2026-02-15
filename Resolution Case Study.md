@@ -233,6 +233,6 @@ CREATE TABLE "FactTrips" (
 );
 ```
 
-
+After running all these codes, right-click the Production database and select the Refresh option from the dropdown. Once the database is refreshed, the 4 tables (`DimDate`, `DimStation`, `DimTruck`, `FactTrips`) are created under `Databases > Production > Schemas > public > Tables`. 
 
 
