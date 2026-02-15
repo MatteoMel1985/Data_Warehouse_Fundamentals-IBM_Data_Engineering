@@ -233,6 +233,18 @@ CREATE TABLE "FactTrips" (
 );
 ```
 
-After running all these codes, right-click the Production database and select the Refresh option from the dropdown. Once the database is refreshed, the 4 tables (`DimDate`, `DimStation`, `DimTruck`, `FactTrips`) are created under `Databases > Production > Schemas > public > Tables`. 
+After running all these codes, right-click the `FinalProject` database and select the Refresh option from the dropdown. Once the database is refreshed, the 4 tables (`DimDate`, `DimStation`, `DimTruck`, `FactTrips`) are created under `Databases > Production > Schemas > public > Tables`. 
 
+## Task 9: Load data into the dimension table DimDate  
 
+In the tree-view, right-click on DimDate and go to Import/Export  
+
+![DimDate](https://github.com/MatteoMel1985/Relational-Dataset-Images/blob/main/Data%20Warehouse/03.09.01-DimDate.png?raw=true)  
+
+Click on Query tool and then click Open file and click on the three dot and choose Upload option. 
+
+>***Note: Ensure that you upload the files to this path: /var/lib/pgadmin/***
+
+![upload](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/-lN1dzcWoXk2vRUggqhofQ/DWF8.png)  
+
+In the new blank page that appears drag and drop the star-schema.sql file inside the blank page. Once the star-schema.sql file is successfully loaded, click on the X icon on the right hand side of the page as shown in the screenshot.
