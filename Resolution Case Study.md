@@ -380,7 +380,7 @@ Take a screenshot of the output and name it `9-DimDate.png`
 
 ## Task 10: Load data into the dimension table DimTruck  
 
-Repeat the same process with the table [DimTruck](https://github.com/MatteoMel1985/Data_Warehouse_Fundamentals-IBM_Data_Engineering/blob/main/CSV/DimTruck.csv)  
+Repeat the same process with the table [10-DimTruck](https://github.com/MatteoMel1985/Data_Warehouse_Fundamentals-IBM_Data_Engineering/blob/main/CSV/DimTruck.csv)  
 
 Run the following SQL query.
 
@@ -397,9 +397,9 @@ Take a screenshot of the output and name it `10-DimTruck.png`.
 
 ## Task 11: Load data into the dimension table DimStation  
 
-Repeat the same process with the table [DimStation](https://github.com/MatteoMel1985/Data_Warehouse_Fundamentals-IBM_Data_Engineering/blob/main/CSV/DimStation.csv)  
+Repeat the same process with the table [10-DimStation](https://github.com/MatteoMel1985/Data_Warehouse_Fundamentals-IBM_Data_Engineering/blob/main/CSV/DimStation.csv)  
 
-Run the following SQL query.
+Run the following SQL query.  
 
 ```SQL
 SELECT *
@@ -407,13 +407,13 @@ FROM "DimStation"
 LIMIT 5;
 ```
 
-Take a screenshot of the output and name it `12-DimStation.png`. 
+Take a screenshot of the output and name it `11-DimStation.png`. 
 
 ![DimStation.png](https://github.com/MatteoMel1985/Data_Warehouse_Fundamentals-IBM_Data_Engineering/blob/main/Tasks/11-DimStation.PNG?raw=true)
 
 ## Task 12: Load data into the fact table FactTrips  
 
-Repeat the same process with the table [FactTrips](https://github.com/MatteoMel1985/Data_Warehouse_Fundamentals-IBM_Data_Engineering/blob/main/CSV/FactTrips.csv)  
+Repeat the same process with the table [11-FactTrips](https://github.com/MatteoMel1985/Data_Warehouse_Fundamentals-IBM_Data_Engineering/blob/main/CSV/FactTrips.csv)  
 
 Run the following SQL query.
 
@@ -422,6 +422,6 @@ SELECT *
 FROM "FactTrips"
 LIMIT 5;
 ```
-Take a screenshot of the output and name it `11-FactTrips.png`.  
+Take a screenshot of the output and name it `12-FactTrips.png`.  
 
-![FactTrips.png](https://github.com/MatteoMel1985/Data_Warehouse_Fundamentals-IBM_Data_Engineering/blob/main/Tasks/12-FactTrips.PNG?raw=true)
+![12-FactTrips.png](https://github.com/MatteoMel1985/Data_Warehouse_Fundamentals-IBM_Data_Engineering/blob/main/Tasks/12-FactTrips.PNG?raw=true)
