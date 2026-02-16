@@ -307,76 +307,9 @@ FROM "DimStation"
 LIMIT 5;
 ```
 
-295
-296
-297
-298
-299
-300
-301
-302
-303
-304
-305
-306
-307
-308
-309
-310
-311
-312
-313
-314
-315
-    FOREIGN KEY (Truckid) REFERENCES "DimTruck" (Truckid)
-);
-```
+Take a screenshot of the output and name it `10-DimDate.png`
 
-After running all these codes, right-click the `FinalProject` database and select the Refresh option from the dropdown. Once the database is refreshed, the 4 tables (`DimDate`, `DimStation`, `DimTruck`, `FactTrips`) are created under `Databases > Production > Schemas > public > Tables`. 
-
-## Task 9: Load data into the dimension table DimDate  
-
-In the tree-view, right-click on DimDate and go to Import/Export  
-
-![DimDate](https://github.com/MatteoMel1985/Relational-Dataset-Images/blob/main/Data%20Warehouse/03.09.01-DimDate.png?raw=true)  
-
-Click on the folder on the right side of `Filename`. 
-
-![Screenshot_1](https://github.com/MatteoMel1985/Relational-Dataset-Images/blob/main/Data%20Warehouse/Screenshot_1.PNG?raw=true)
-
-Click on the upward pointing arrow on the upper left side of the window and select the following path: `/var/lib/pgadmin/`.  
-
-![Screenshot_2](https://github.com/MatteoMel1985/Relational-Dataset-Images/blob/main/Data%20Warehouse/Screenshot_2.PNG?raw=true)  
-
-Click on the three-dot icon on the upper right of the window.  
-
-![Screenshot_3](https://raw.githubusercontent.com/MatteoMel1985/Relational-Dataset-Images/2d9f7a02822edb250d639296a849b4ce9cf0316a/Data%20Warehouse/Screenshot_3.PNG)  
-
-Drag and drop the file `DimDate.csv` and, once uploaded, click on the highlighted small `x` icon. 
-
-![Screenshot_4](https://github.com/MatteoMel1985/Relational-Dataset-Images/blob/main/Data%20Warehouse/Screenshot_4.PNG?raw=true)  
-
-Choose the `DimDate.csv` file on the screen and click the button `Select` on the lower-right corner of the window. 
-
-![Select](https://github.com/MatteoMel1985/Relational-Dataset-Images/blob/main/Data%20Warehouse/03.09.04-DimDate.png?raw=true)
-
-Click on `Options`, select `Header`, and click on the lower-right button `OK`.  
-
-![Screenshot_5](https://github.com/MatteoMel1985/Relational-Dataset-Images/blob/main/Data%20Warehouse/Screenshot_5.PNG?raw=true)
-
-Now the table is populated. 
-
-Now run the following SQL query from the query tool.
-
-```SQL
-SELECT *
-FROM "DimDate"
-LIMIT 5;
-```
-
-Take a screenshot of the output and name it `9-DimDate.png`
-
-![9-DimDate.png](https://github.com/MatteoMel1985/Data_Warehouse_Fundamentals-IBM_Data_Engineering/blob/main/Tasks/9-DimDate.PNG?raw=true)
+![10-DimDate.png](https://github.com/MatteoMel1985/Data_Warehouse_Fundamentals-IBM_Data_Engineering/blob/main/Tasks/9-DimDate.PNG?raw=true)
 
 ## Task 10: Load data into the dimension table DimTruck  
 
