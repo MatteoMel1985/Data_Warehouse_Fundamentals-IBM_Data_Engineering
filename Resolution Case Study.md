@@ -241,12 +241,6 @@ In the tree-view, right-click on DimDate and go to Import/Export
 
 ![DimDate](https://github.com/MatteoMel1985/Relational-Dataset-Images/blob/main/Data%20Warehouse/03.09.01-DimDate.png?raw=true)  
 
-Click on Query tool and then click Open file and click on the three dot and choose Upload option. 
-
->***Note: Ensure that you upload the files to this path: /var/lib/pgadmin/***
-
-![upload](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/-lN1dzcWoXk2vRUggqhofQ/DWF8.png)  
-
 Click on the folder on the right side of `Filename`. 
 
 ![Screenshot_1](https://github.com/MatteoMel1985/Relational-Dataset-Images/blob/main/Data%20Warehouse/Screenshot_1.PNG?raw=true)
@@ -255,3 +249,44 @@ Click on the upward pointing arrow on the upper left side of the window and sele
 
 ![Screenshot_2](https://github.com/MatteoMel1985/Relational-Dataset-Images/blob/main/Data%20Warehouse/Screenshot_2.PNG?raw=true)  
 
+Click on the three-dot icon on the upper right of the window.  
+
+![Screenshot_3](https://raw.githubusercontent.com/MatteoMel1985/Relational-Dataset-Images/2d9f7a02822edb250d639296a849b4ce9cf0316a/Data%20Warehouse/Screenshot_3.PNG)  
+
+Drag and drop the file `DimDate.csv` and, once uploaded, click on the highlighted small `x` icon. 
+
+![Screenshot_4](https://github.com/MatteoMel1985/Relational-Dataset-Images/blob/main/Data%20Warehouse/Screenshot_4.PNG?raw=true)  
+
+Choose the `DimDate.csv` file on the screen and click the button `Select` on the lower-right corner of the window. 
+
+![Select](https://github.com/MatteoMel1985/Relational-Dataset-Images/blob/main/Data%20Warehouse/03.09.04-DimDate.png?raw=true)
+
+Click on `Options`, select `Header`, and click on the lower-right button `OK`.  
+
+![Screenshot_5](https://github.com/MatteoMel1985/Relational-Dataset-Images/blob/main/Data%20Warehouse/Screenshot_5.PNG?raw=true)
+
+Now the table is populated. 
+
+Now run the following SQL query from the query tool.
+
+```SQL
+SELECT *
+FROM "DimDate"
+LIMIT 5;
+```
+
+Take a screenshot of the output and name it `9-DimDate.png`
+
+![9-DimDate.png](https://github.com/MatteoMel1985/Data_Warehouse_Fundamentals-IBM_Data_Engineering/blob/main/Tasks/9-DimDate.PNG?raw=true)
+
+## Task 10: Load data into the dimension table DimTruck  
+
+Repeat the same process with the table [DimTruck](https://github.com/MatteoMel1985/Data_Warehouse_Fundamentals-IBM_Data_Engineering/blob/main/CSV/DimTruck.csv)  
+
+## Task 11: Load data into the dimension table DimStation  
+
+Repeat the same process with the table [DimStation](https://github.com/MatteoMel1985/Data_Warehouse_Fundamentals-IBM_Data_Engineering/blob/main/CSV/DimStation.csv)  
+
+## Task 12: Load data into the fact table FactTrips  
+
+Repeat the same process with the table [FactTrips](https://github.com/MatteoMel1985/Data_Warehouse_Fundamentals-IBM_Data_Engineering/blob/main/CSV/FactTrips.csv)  
