@@ -357,4 +357,90 @@ LIMIT 5;
 ```
 Take a screenshot of the output and name it `12-FactTrips.png`.  
 
-![12-FactTrips.png](https://github.com/MatteoMel1985/Data_Warehouse_Fundamentals-IBM_Data_Engineering/blob/main/Tasks/12-FactTrips.PNG?raw=true)
+![12-FactTrips.png](https://github.com/MatteoMel1985/Data_Warehouse_Fundamentals-IBM_Data_Engineering/blob/main/Tasks/12-FactTrips.PNG?raw=true)  
+
+<h1 align="center">Exercise 4 - Write aggregation queries and create materialized views</h1>  
+
+## Task 13: Create a grouping sets query  
+
+To create a grouping sets query using the columns stationid, trucktype, total waste collected, run the following SQL query. 
+
+```SQL
+SELECT FT.Stationid,
+  DT.TruckType,
+  SUM(FT.Wastecollected) AS TotalWasteCollected
+FROM "FactTrips" FT
+  JOIN "DimTruck" DT ON FT.Truckid = DT.Truckid
+GROUP BY GROUPING SETS (FT.Stationid, DT.TruckType)
+ORDER BY FT.Stationid, DT.TruckType;
+```
+
+Take a screenshot of the output and name it `13-groupingsets.png`.  
+
+![13-groupingsets.png](https://github.com/MatteoMel1985/Data_Warehouse_Fundamentals-IBM_Data_Engineering/blob/main/Tasks/13-groupingsets.PNG?raw=true)  
+
+## Task 14: Create a rollup query 
+
+To create a rollup query using the columns year, city, stationid, and total waste collected, run the following SQL statement. 
+
+```SQL
+SELECT DD.Year,
+  DS.City,
+  FT.Stationid,
+  SUM(FT.Wastecollected) AS TotalWasteCollected
+FROM "FactTrips" FT
+  JOIN "DimStation" DS ON FT.Stationid = DS.Stationid
+  JOIN "DimDate" DD ON FT.Dateid = DD.Dateid
+GROUP BY ROLLUP(DD.Year, DS.City, FT.Stationid)
+ORDER BY DD.Year, DS.City, FT.Stationid;
+```
+
+Take a screenshot of the output and name it `14-rollup.png`.  
+
+![14-rollup.png](https://github.com/MatteoMel1985/Data_Warehouse_Fundamentals-IBM_Data_Engineering/blob/main/Tasks/14-rollup.PNG?raw=true)  
+
+## Task 15: Create a cube query  
+
+To create a cube query using the columns year, city, stationid, and average waste collected, run the following SQL query. 
+
+```SQL
+SELECT DD.Year,
+  DS.City,
+  FT.Stationid,
+  AVG(FT.Wastecollected) AS AverageWasteCollected
+FROM "FactTrips" FT
+  JOIN "DimStation" DS ON FT.Stationid = DS.Stationid
+  JOIN "DimDate" DD ON FT.Dateid = DD.Dateid
+GROUP BY CUBE(DD.Year, DS.City, FT.Stationid)
+ORDER BY DD.Year, DS.City, FT.Stationid;
+```
+
+Take a screenshot of the output and name it `15-cube.png`.  
+
+![15-cube.png](https://github.com/MatteoMel1985/Data_Warehouse_Fundamentals-IBM_Data_Engineering/blob/main/Tasks/15-cube.PNG?raw=true)  
+
+## Task 16: Create a materialized view  
+
+To ceate an materialised view named max_waste_stats using the columns city, stationid, trucktype, and max waste collected, run the following SQL statement. 
+
+```SQL
+CREATE MATERIALIZED VIEW max_waste_stats AS
+SELECT DS.City,
+  FT.Stationid,
+	DT.TruckType,
+	MAX(FT.Wastecollected) AS MaxWasteCollected
+FROM "FactTrips" FT
+  JOIN "DimStation" DS ON FT.Stationid = DS.Stationid
+  JOIN "DimTruck" DT ON FT.Truckid = DT.Truckid
+GROUP BY DS.City, FT.Stationid, DT.TruckType;
+```
+
+Take a screenshot of the output and name it `16-mv.png`.  
+
+![16-mv.png](https://github.com/MatteoMel1985/Data_Warehouse_Fundamentals-IBM_Data_Engineering/blob/main/Tasks/16-mv.PNG?raw=true)  
+
+Execute the SQL statement below to populate it. 
+
+```SQL
+REFRESH MATERIALIZED VIEW max_waste_stats;
+```
