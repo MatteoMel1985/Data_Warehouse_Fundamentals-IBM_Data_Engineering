@@ -6,7 +6,7 @@
 
 ## Task 1: Design the dimension table MyDimDate  
 
-To design the `MyDimDate` table, it is sufficient to inspect the attributes of [DimDate.csv](https://github.com/MatteoMel1985/Data_Warehouse_Fundamentals-IBM_Data_Engineering/blob/main/CSV/DimDate.csv).
+To design the `MyDimDate` table, it is sufficient to inspect the attributes of [DimDate.csv](./CSV/DimDate.csv).
 
 Hence, it will appear as follows.
 
@@ -99,13 +99,13 @@ CREATE TABLE "MyDimDate" (
 );
 ```
 
-![MyDimDate](https://github.com/MatteoMel1985/Relational-Dataset-Images/blob/main/Data%20Warehouse/02.05-MyDimDate.png?raw=true)  
+![MyDimDate](https://res.cloudinary.com/dmrfsdtq2/image/upload/v1784202492/qiov3wr1zaomxszw3kvv.png)  
 
 Take a screenshot of the SQL statement you used to create the table MyDimDate.
 
 Name the screenshot `5-MyDimDate.png`.  
 
-![5-MyDimDate.pn](https://github.com/MatteoMel1985/Data_Warehouse_Fundamentals-IBM_Data_Engineering/blob/main/Tasks/5-MyDimDate.PNG?raw=true)  
+![5-MyDimDate.pn](./Tasks/5-MyDimDate.PNG)  
 
 ## Task 6: Create the dimension table MyDimWaste  
 
@@ -122,7 +122,7 @@ CREATE TABLE "MyDimWaste" (
 
 Take a screenshot of the SQL statement and save it as `6-MyDimWaste.png`  
 
-![6-MyDimWaste.pn](https://github.com/MatteoMel1985/Data_Warehouse_Fundamentals-IBM_Data_Engineering/blob/main/Tasks/6-MyDimWaste.PNG?raw=true)  
+![6-MyDimWaste.pn](./Tasks/6-MyDimWaste.PNG)  
 
 ## Task 7: Create the dimension table MyDimZone    
 
@@ -136,11 +136,11 @@ CREATE TABLE "MyDimZone" (
 );
 ```
 
-![MyDimZone](https://github.com/MatteoMel1985/Relational-Dataset-Images/blob/main/Data%20Warehouse/02.07-MyDimZone.png?raw=true)  
+![MyDimZone](https://res.cloudinary.com/dmrfsdtq2/image/upload/v1784202494/nlztercyrobleprro998.png)  
 
 Take a screenshot of the SQL statement and save it as `7-MyDimZone.png`  
 
-![7-MyDimZone.png](https://github.com/MatteoMel1985/Data_Warehouse_Fundamentals-IBM_Data_Engineering/blob/main/Tasks/7-MyDimZone.PNG?raw=true)  
+![7-MyDimZone.png](./Tasks/7-MyDimZone.PNG)  
 
 ## Task 8: Create the fact table MyFactTrips  
 
@@ -159,11 +159,11 @@ CREATE TABLE "MyFactTrips" (
 );
 ```
 
-![MyFactTrips](https://github.com/MatteoMel1985/Relational-Dataset-Images/blob/main/Data%20Warehouse/02.08-MyFactTrips.png?raw=true)  
+![MyFactTrips](https://res.cloudinary.com/dmrfsdtq2/image/upload/v1784202496/igwa71rf7xdfjikb7kkr.png)  
 
 Take a screenshot of the SQL statement and save it as `8-MyFactTrips.png`  
 
-![8-MyFactTrips.png](https://github.com/MatteoMel1985/Data_Warehouse_Fundamentals-IBM_Data_Engineering/blob/main/Tasks/8-MyFactTrips.PNG?raw=true)  
+![8-MyFactTrips.png](./Tasks/8-MyFactTrips.PNG)  
 
 <h1 align="center">Exercise 3: Load data into the data warehouse</h1>  
 
@@ -181,7 +181,7 @@ In the Database box, type `FinalProject` as the name for your new database, and 
 
 Now, click on the Query Tool and select Open File.  
 
-![Open_File](https://github.com/MatteoMel1985/Relational-Dataset-Images/blob/main/Data%20Warehouse/03-OpenFile.png?raw=true)  
+![Open_File](https://res.cloudinary.com/dmrfsdtq2/image/upload/v1784202491/jytmdgfm1d9urmuyzfq3.png)  
 
 To create the `DimDate` table, run the following SQL code. 
 
@@ -239,31 +239,31 @@ After running all these codes, right-click the `FinalProject` database and selec
 
 In the tree-view, right-click on DimDate and go to Import/Export  
 
-![DimDate](https://github.com/MatteoMel1985/Relational-Dataset-Images/blob/main/Data%20Warehouse/03.09.01-DimDate.png?raw=true)  
+![DimDate](https://res.cloudinary.com/dmrfsdtq2/image/upload/v1784202492/qtshijkuh02ouvwkqyqh.png)  
 
 Click on the folder on the right side of `Filename`. 
 
-![Screenshot_1](https://github.com/MatteoMel1985/Relational-Dataset-Images/blob/main/Data%20Warehouse/Screenshot_1.PNG?raw=true)
+![Screenshot_1](https://res.cloudinary.com/dmrfsdtq2/image/upload/v1784202495/fmgjnasqxslnkys7fckj.png)
 
 Click on the upward pointing arrow on the upper left side of the window and select the following path: `/var/lib/pgadmin/`.  
 
-![Screenshot_2](https://github.com/MatteoMel1985/Relational-Dataset-Images/blob/main/Data%20Warehouse/Screenshot_2.PNG?raw=true)  
+![Screenshot_2](https://res.cloudinary.com/dmrfsdtq2/image/upload/v1784202489/ipetsmwqh6poehy6kefs.png)  
 
 Click on the three-dot icon on the upper right of the window.  
 
-![Screenshot_3](https://raw.githubusercontent.com/MatteoMel1985/Relational-Dataset-Images/2d9f7a02822edb250d639296a849b4ce9cf0316a/Data%20Warehouse/Screenshot_3.PNG)  
+![Screenshot_3](https://res.cloudinary.com/dmrfsdtq2/image/upload/v1784202491/vxexdlqfnf5hlwicetat.png)  
 
 Drag and drop the file `DimDate.csv` and, once uploaded, click on the highlighted small `x` icon. 
 
-![Screenshot_4](https://github.com/MatteoMel1985/Relational-Dataset-Images/blob/main/Data%20Warehouse/Screenshot_4.PNG?raw=true)  
+![Screenshot_4](https://res.cloudinary.com/dmrfsdtq2/image/upload/v1784202491/qr8f6sz6ii3hn5tquys4.png)  
 
 Choose the `DimDate.csv` file on the screen and click the button `Select` on the lower-right corner of the window. 
 
-![Select](https://github.com/MatteoMel1985/Relational-Dataset-Images/blob/main/Data%20Warehouse/03.09.04-DimDate.png?raw=true)
+![Select](https://res.cloudinary.com/dmrfsdtq2/image/upload/v1784202493/qws9oauquretga4xjqrs.png)
 
 Click on `Options`, select `Header`, and click on the lower-right button `OK`.  
 
-![Screenshot_5](https://github.com/MatteoMel1985/Relational-Dataset-Images/blob/main/Data%20Warehouse/Screenshot_5.PNG?raw=true)
+![Screenshot_5](https://res.cloudinary.com/dmrfsdtq2/image/upload/v1784202494/shus8syxdhtdc0wegqus.png)
 
 Now the table is populated. 
 
@@ -277,11 +277,11 @@ LIMIT 5;
 
 Take a screenshot of the output and name it `9-DimDate.png`
 
-![9-DimDate.png](https://github.com/MatteoMel1985/Data_Warehouse_Fundamentals-IBM_Data_Engineering/blob/main/Tasks/9-DimDate.PNG?raw=true)
+![9-DimDate.png](./Tasks/9-DimDate.PNG)
 
 ## Task 10: Load data into the dimension table DimTruck  
 
-Repeat the same process with the table [DimTruck](https://github.com/MatteoMel1985/Data_Warehouse_Fundamentals-IBM_Data_Engineering/blob/main/CSV/DimTruck.csv)  
+Repeat the same process with the table [DimTruck](./CSV/DimTruck.csv)  
 
 Run the following SQL query.
 
@@ -293,11 +293,11 @@ LIMIT 5;
 ```
 Take a screenshot of the output and name it `10-DimTruck.png`
 
-![10-DimTruck.png](https://github.com/MatteoMel1985/Data_Warehouse_Fundamentals-IBM_Data_Engineering/blob/main/Tasks/10-DimTruck.PNG?raw=true)  
+![10-DimTruck.png](./Tasks/10-DimTruck.PNG)  
 
 ## Task 11: Load data into the dimension table DimStation  
 
-Repeat the same process with the table [DimStation](https://github.com/MatteoMel1985/Data_Warehouse_Fundamentals-IBM_Data_Engineering/blob/main/CSV/DimStation.csv)  
+Repeat the same process with the table [DimStation](./CSV/DimStation.csv)  
 
 Run the following SQL query.
 
@@ -307,46 +307,13 @@ FROM "DimStation"
 LIMIT 5;
 ```
 
-Take a screenshot of the output and name it `10-DimDate.png`
+Take a screenshot of the output and name it `11-DimStation.PNG`
 
-![10-DimDate.png](https://github.com/MatteoMel1985/Data_Warehouse_Fundamentals-IBM_Data_Engineering/blob/main/Tasks/9-DimDate.PNG?raw=true)
-
-## Task 10: Load data into the dimension table DimTruck  
-
-Repeat the same process with the table [10-DimTruck](https://github.com/MatteoMel1985/Data_Warehouse_Fundamentals-IBM_Data_Engineering/blob/main/CSV/DimTruck.csv)  
-
-Run the following SQL query.
-
-```SQL
-SELECT *
-FROM "DimTruck"
-LIMIT 5;
-
-```
-
-Take a screenshot of the output and name it `10-DimTruck.png`.  
-
-![10-DimTruck.png](https://github.com/MatteoMel1985/Data_Warehouse_Fundamentals-IBM_Data_Engineering/blob/main/Tasks/10-DimTruck.PNG?raw=true)
-
-## Task 11: Load data into the dimension table DimStation  
-
-Repeat the same process with the table [10-DimStation](https://github.com/MatteoMel1985/Data_Warehouse_Fundamentals-IBM_Data_Engineering/blob/main/CSV/DimStation.csv)  
-
-Run the following SQL query.  
-
-```SQL
-SELECT *
-FROM "DimStation"
-LIMIT 5;
-```
-
-Take a screenshot of the output and name it `11-DimStation.png`. 
-
-![DimStation.png](https://github.com/MatteoMel1985/Data_Warehouse_Fundamentals-IBM_Data_Engineering/blob/main/Tasks/11-DimStation.PNG?raw=true)
+![11-DimStation.PNG](./Tasks/11-DimStation.PNG)
 
 ## Task 12: Load data into the fact table FactTrips  
 
-Repeat the same process with the table [11-FactTrips](https://github.com/MatteoMel1985/Data_Warehouse_Fundamentals-IBM_Data_Engineering/blob/main/CSV/FactTrips.csv)  
+Repeat the same process with the table [11-FactTrips](./CSV/FactTrips.csv)  
 
 Run the following SQL query.
 
@@ -357,7 +324,7 @@ LIMIT 5;
 ```
 Take a screenshot of the output and name it `12-FactTrips.png`.  
 
-![12-FactTrips.png](https://github.com/MatteoMel1985/Data_Warehouse_Fundamentals-IBM_Data_Engineering/blob/main/Tasks/12-FactTrips.PNG?raw=true)  
+![12-FactTrips.png](./Tasks/12-FactTrips.PNG)  
 
 <h1 align="center">Exercise 4 - Write aggregation queries and create materialized views</h1>  
 
@@ -377,7 +344,7 @@ ORDER BY FT.Stationid, DT.TruckType;
 
 Take a screenshot of the output and name it `13-groupingsets.png`.  
 
-![13-groupingsets.png](https://github.com/MatteoMel1985/Data_Warehouse_Fundamentals-IBM_Data_Engineering/blob/main/Tasks/13-groupingsets.PNG?raw=true)  
+![13-groupingsets.png](./Tasks/13-groupingsets.PNG)  
 
 ## Task 14: Create a rollup query 
 
@@ -397,7 +364,7 @@ ORDER BY DD.Year, DS.City, FT.Stationid;
 
 Take a screenshot of the output and name it `14-rollup.png`.  
 
-![14-rollup.png](https://github.com/MatteoMel1985/Data_Warehouse_Fundamentals-IBM_Data_Engineering/blob/main/Tasks/14-rollup.PNG?raw=true)  
+![14-rollup.png](./Tasks/14-rollup.PNG)  
 
 ## Task 15: Create a cube query  
 
@@ -417,7 +384,7 @@ ORDER BY DD.Year, DS.City, FT.Stationid;
 
 Take a screenshot of the output and name it `15-cube.png`.  
 
-![15-cube.png](https://github.com/MatteoMel1985/Data_Warehouse_Fundamentals-IBM_Data_Engineering/blob/main/Tasks/15-cube.PNG?raw=true)  
+![15-cube.png](./Tasks/15-cube.PNG)  
 
 ## Task 16: Create a materialized view  
 
@@ -437,7 +404,7 @@ GROUP BY DS.City, FT.Stationid, DT.TruckType;
 
 Take a screenshot of the output and name it `16-mv.png`.  
 
-![16-mv.png](https://github.com/MatteoMel1985/Data_Warehouse_Fundamentals-IBM_Data_Engineering/blob/main/Tasks/16-mv.PNG?raw=true)  
+![16-mv.png](./Tasks/16-mv.PNG)  
 
 Execute the SQL statement below to populate it. 
 
